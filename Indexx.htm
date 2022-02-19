@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Saurabh Singh Rawat </title>
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/Saurabh%20Singh%20Rawat2.css" rel="stylesheet" type="text/css">
+    </head>
+  <body>
+      <!---Div Wrapper Starts-->
+        <div id="wrapper">
+            <!--Header Starts -->
+            <header>
+                <div class="logo">
+                    <h2><i class="fa fa-heart"></i>SumitrSaurabh</h2>
+                    
+                </div>
+                <nav>
+                    <ul>
+                         <li><a href="#" class="activehome">Home </a></li>
+                        <li><a href="Links/B/Biography.html">Profile</a></li>
+                        <li><a href="Links/facebook/Facebook.php">Pages<i class="fa fa-angle-down"></i></a></li>
+                        <li><a href="Links/fb1/Index.htm">Logg In<i class="fa fa-angle-down"></i></a></li>
+                        <li><a href="Links/slogin/slogin.html">Sign In</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Header Ends -->
+              <!---Div Slider Starts-->
+<!--               <div id="slider" style="background-image: url('image/m.jpg')">-->                
+            
+            <div id="slider"> 
+        <img src="image/9.png" alt="slide1" id="slider" class="slides"/>
+        <img src="image/m.jpg" alt="slide1" id="slider" class="slides"/>
+        <img src="image/s1.jpg" alt="slide1" id="slider" class="slides"/>
+        <img src="image/s2.jpg" alt="slide1" id="slider" class="slides"/>
+        <img src="image/s3.jpg" alt="slide1" id="slider" class="slides"/>
+        <img src="image/s4.jpg" alt="slide1" id="slider" class="slides"/>
+        <img src="image/2.jpg" alt="slide1" id="slider" class="slides"/>
+        <button class="prev" onclick="plusIndex(-1)" id="btn1">&#10094;</button>
+        <button class="next" onclick="plusIndex(1)" id="btn2">&#10095;</button>
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                   </ol>
+                   <div class="text">
+                    <h3>Powerful and Responsive web Designer</h3>
+                       <p>
+                           Presented by Mr.Saurabh Singh Rawat for Designing. 
+                       </p>
+                   </div>
+                   <a href="#" class="prev">
+                      <i class=" fa fa-angle-left"></i>
+                   </a>
+                  <a href="#" class="next">
+                      <i class=" fa fa-angle-right"></i>
+                   </a>
+                       </div>
+            <!---Div Slider Ends-->
+                <!---Section Starts-->            
+                <section>
+                    <div class="container">
+                        <!--Facebook Section Starts -->
+                    <div>
+                        <div class="icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <div class="discription">
+                            <h3>Facebook Marketing</h3>
+                            <p>
+                                With such a large user base, ignoring Facebook really isn't an option for most marketers. You can bet your ideal market is using Facebook nearly every day. ... The guide is aimed at the beginner who wants an introduction into marketing their business on the world's largest social network.
+                            </p>
+                        </div>
+                    </div>    
+                    <!--Facebook Section Ended -->
+                    
+                       <!--Twitter Section Starts -->
+                    <div>
+                        <div class="icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <div class="discription">
+                            <h3>Twitter Marketing</h3>
+                            <p>
+                                SHHHH! 12 Twitter Marketing Secrets For Ambitious Social Media Marketers. With 42% of Twitter's users following brands, it's a fertile ground of marketing opportunities. It can spread awareness of your brand, generate leads, drive traffic to your site, build a loyal customer base and much more.
+                            </p>
+                        </div>
+                    </div>    
+                    <!--Twitter Section Ended -->
+                    
+                       <!--Google plus Section Starts -->
+                    <div>
+                        <div class="icon">
+                            <i class="fa fa-google-plus"></i>
+                        </div>
+                        <div class="discription">
+                            <h3>Google Plus Marketing</h3>
+                            <p>
+                              As the digital marketing landscape continues to grow at a rapid pace, marketers are faced with new challenges and opportunities within this digital age. The Digital Marketing Course is an initiative designed to educate students and professors in the area of Digital Marketing. 
+                            </p>
+                        </div>
+                    </div>    
+                    <!--Google plus Section Ended -->
+                    </div>    
+                </section>
+                <!---Secton Ends-->
+                 <!---Footer Starts-->
+                <footer>
+                    <div class="container">
+                    <div class="copyright">
+                            &copy; 2017 <a href="Links/facebook/Facebook.php">Saurabh Singh Rawat</a> All Rights Reserved.
+                    </div>
+                    <div class="downmenu">
+                        <ul>
+                            <li><a href="Indexx.htm">Home</a></li>
+                            <li><a href="index.html">About Us</a></li>
+                            <li><a href="Links/Thankfull.html">ThankFull</a></li>
+                        </ul>
+                    </div>
+                    </div>=
+                </footer>
+            <!---Footer Ends-->
+            
+      </div>
+      <!---Div Wrapper Ends-->
+    </body> 
+        <script>
+        var index = 1;
+        function plusIndex(n){
+            index = index + n;
+            showImage(index);
+        }
+        
+        showImage(1);
+        function showImage(n){
+            var i;
+            var x =document.getElementsByClassName("slides");
+            if(n > x.length){ index = 1};
+            if(n < 1){ index = x.length};
+            for (i=0;i<x.length;i++)
+                {
+                    x[i].style.display = "none";
+                }
+            x[index-1].style.display = "block";
+        }
+  autoSlide();
+        function autoSlide(){
+        /*    alert("hELOOO");        */
+             var i;
+            var x =document.getElementsByClassName("slides");
+                    for (i=0;i<x.length;i++)
+                {
+                    x[i].style.display = "none";
+                }
+            if(index > x.length){index = 1}
+            x[index-1].style.display = "block";
+                index++;
+        
+            setTimeout(autoSlide,2000);
+        }            
+</script>
+</html>
